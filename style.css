@@ -1,0 +1,126 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #FF6F61, #FF3C7D); /* Simple gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Todo container styling */
+.todo-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling with updated color */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #FFFFFF; /* Soft white color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for better readability */
+}
+
+/* Subtitle styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #FF6F61;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #FF3C7D;
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling */
+li {
+    background-color: #fff;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit and delete button styling */
+button {
+    margin-left: 10px;
+    background-color: #FF4500;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #D32F2F;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .todo-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
